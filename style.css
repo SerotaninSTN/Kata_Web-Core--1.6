@@ -1316,7 +1316,7 @@ template {
   .main {
     min-height: 535px;
     max-width: 1120px;
-    margin-left: 320px; }
+    margin-left: 0px; }
     .main .main__title {
       min-height: 40px;
       margin-top: 42px;
@@ -1579,19 +1579,12 @@ template {
           margin-top: 40px; } }
 
 @media (min-width: 1440px) {
-  .page {
-    margin: 0 auto;
-    max-width: 1440px;
-    flex-direction: row;
-    position: relative; }
   .burger-menu_container {
     display: block;
-    max-width: 320px; }
+    width: 320px; }
     .burger-menu_container .burger-menu {
       display: block;
-      position: absolute;
-      left: 0;
-      display: block;
+      position: static;
       width: 320px;
       box-shadow: none;
       z-index: 0;
@@ -1600,8 +1593,7 @@ template {
       background-color: #ffffff;
       display: flex;
       flex-direction: column;
-      justify-content: flex-start;
-      height: 1843px; }
+      justify-content: flex-start; }
       .burger-menu_container .burger-menu .burger-menu__header .burger-menu__logo {
         margin-left: 24px; }
       .burger-menu_container .burger-menu .burger-menu__navigacia {
@@ -1811,46 +1803,44 @@ template {
     flex: 0 0 30.3%; } }
 
 @media (min-width: 1440px) {
-  .brend {
-    margin-left: 320px; }
-    .brend .brend-title {
+  .brend .brend-title {
+    max-width: 1120px;
+    margin: 0; }
+    .brend .brend-title .brend-link {
+      margin-left: 32px; }
+  .brend .brend-swiper {
+    max-width: 1120px;
+    height: 236px;
+    padding-left: 32px;
+    padding-right: 0; }
+    .brend .brend-swiper .swiper-container {
       max-width: 1120px;
-      margin: 0; }
-      .brend .brend-title .brend-link {
-        margin-left: 32px; }
-    .brend .brend-swiper {
-      max-width: 1120px;
-      height: 236px;
-      padding-left: 32px;
-      padding-right: 0; }
-      .brend .brend-swiper .swiper-container {
-        max-width: 1120px;
+      margin: 0;
+      padding: 0; }
+      .brend .brend-swiper .swiper-container .swiper-wrapper {
+        height: 90px;
         margin: 0;
         padding: 0; }
-        .brend .brend-swiper .swiper-container .swiper-wrapper {
+        .brend .brend-swiper .swiper-container .swiper-wrapper > * {
+          flex: 0 0 21.9%; }
+        .brend .brend-swiper .swiper-container .swiper-wrapper .swiper-slide {
           height: 90px;
           margin: 0;
+          margin-top: 16px;
+          margin-right: 24px;
           padding: 0; }
-          .brend .brend-swiper .swiper-container .swiper-wrapper > * {
-            flex: 0 0 21.9%; }
-          .brend .brend-swiper .swiper-container .swiper-wrapper .swiper-slide {
-            height: 90px;
-            margin: 0;
-            margin-top: 16px;
-            margin-right: 24px;
-            padding: 0; }
-      .brend .brend-swiper .swiper-container--hide {
-        height: 210px;
-        overflow: hidden; }
-      .brend .brend-swiper .swiper-container--open {
-        height: 320px;
-        overflow: visible; }
-    .brend .brend-swiper--open {
-      height: 360px;
+    .brend .brend-swiper .swiper-container--hide {
+      height: 210px;
+      overflow: hidden; }
+    .brend .brend-swiper .swiper-container--open {
+      height: 320px;
       overflow: visible; }
-    .brend .brend-swiper--hide {
-      overflow: hidden;
-      height: 250px; } }
+  .brend .brend-swiper--open {
+    height: 360px;
+    overflow: visible; }
+  .brend .brend-swiper--hide {
+    overflow: hidden;
+    height: 250px; } }
 
 .tehnic {
   min-width: 320px;
@@ -2013,45 +2003,43 @@ template {
     flex: 0 0 30.3%; } }
 
 @media (min-width: 1440px) {
-  .tehnic {
-    margin-left: 320px; }
-    .tehnic .tehnic-title {
+  .tehnic .tehnic-title {
+    max-width: 1120px;
+    margin: 0; }
+    .tehnic .tehnic-title .tehnic-link {
+      margin-left: 32px; }
+  .tehnic .tehnic__swiper {
+    max-width: 1120px;
+    height: 282px;
+    padding-left: 32px;
+    padding-right: 0; }
+    .tehnic .tehnic__swiper .swiper-container {
       max-width: 1120px;
-      margin: 0; }
-      .tehnic .tehnic-title .tehnic-link {
-        margin-left: 32px; }
-    .tehnic .tehnic__swiper {
-      max-width: 1120px;
-      height: 282px;
-      padding-left: 32px;
-      padding-right: 0; }
-      .tehnic .tehnic__swiper .swiper-container {
-        max-width: 1120px;
+      margin: 0;
+      padding: 0; }
+      .tehnic .tehnic__swiper .swiper-container .swiper-wrapper {
         margin: 0;
         padding: 0; }
-        .tehnic .tehnic__swiper .swiper-container .swiper-wrapper {
+        .tehnic .tehnic__swiper .swiper-container .swiper-wrapper > * {
+          flex: 0 0 21.9%; }
+        .tehnic .tehnic__swiper .swiper-container .swiper-wrapper .swiper-slide {
+          height: 160px;
           margin: 0;
+          margin-top: 16px;
+          margin-right: 24px;
           padding: 0; }
-          .tehnic .tehnic__swiper .swiper-container .swiper-wrapper > * {
-            flex: 0 0 21.9%; }
-          .tehnic .tehnic__swiper .swiper-container .swiper-wrapper .swiper-slide {
-            height: 160px;
-            margin: 0;
-            margin-top: 16px;
-            margin-right: 24px;
-            padding: 0; }
-      .tehnic .tehnic__swiper .tehnic-container--hide {
-        height: 208px;
-        overflow: hidden; }
-      .tehnic .tehnic__swiper .tehnic-container--open {
-        height: 208px;
-        overflow: visible; }
-    .tehnic .tehnic__swiper--open {
-      height: 264px;
+    .tehnic .tehnic__swiper .tehnic-container--hide {
+      height: 208px;
+      overflow: hidden; }
+    .tehnic .tehnic__swiper .tehnic-container--open {
+      height: 208px;
       overflow: visible; }
-    .tehnic .tehnic__swiper--hide {
-      overflow: hidden;
-      height: 264px; } }
+  .tehnic .tehnic__swiper--open {
+    height: 264px;
+    overflow: visible; }
+  .tehnic .tehnic__swiper--hide {
+    overflow: hidden;
+    height: 264px; } }
 
 .services {
   min-width: 320px;
@@ -2306,13 +2294,11 @@ template {
             top: 5px; } }
 
 @media (min-width: 1440px) {
-  .services {
-    margin-left: 320px; }
-    .services .services__swiper {
-      margin-right: 32px;
-      margin-left: 32px; }
-      .services .services__swiper .services-content {
-        height: 120px; } }
+  .services .services__swiper {
+    margin-right: 32px;
+    margin-left: 32px; }
+    .services .services__swiper .services-content {
+      height: 120px; } }
 
 .footer {
   background-color: #F8F8F8;
@@ -2364,19 +2350,13 @@ template {
       margin: 0;
       text-align: right; } }
 
-@media (min-width: 1440px) {
-  .footer {
-    margin-left: 320px; } }
-
 .feetback--hidden {
   display: none; }
 
 .feetback {
-  position: absolute;
   width: 320px;
   height: 676px;
   background-color: #ffffff;
-  left: 0;
   z-index: 6; }
   .feetback .feetback-form {
     margin-top: 24px;
@@ -2391,8 +2371,7 @@ template {
       background-repeat: no-repeat;
       border: none;
       flex-shrink: 0;
-      margin: 0;
-      cursor: pointer; }
+      margin: 0; }
       .feetback .feetback-form .feetback-btn:hover {
         -webkit-filter: opacity(0.9);
                 filter: opacity(0.9);
@@ -2461,11 +2440,16 @@ template {
       border: none;
       flex-shrink: 0; }
 
+.feetback--xs {
+  position: absolute;
+  left: 0; }
+
 @media (min-width: 1440px) {
   .feetback {
+    position: absolute;
     width: 440px;
     height: 940px;
-    left: 120vh; }
+    right: 0; }
     .feetback .feetback-form {
       margin-top: 40px;
       margin-left: 32px;
@@ -2499,11 +2483,9 @@ template {
   display: none; }
 
 .call {
-  position: absolute;
   width: 320px;
   height: 676px;
   background-color: #ffffff;
-  left: 0;
   z-index: 6; }
   .call .call-form {
     margin-top: 24px;
@@ -2588,11 +2570,16 @@ template {
       flex-shrink: 0;
       cursor: pointer; }
 
+.call--xs {
+  position: absolute;
+  left: 0; }
+
 @media (min-width: 1440px) {
   .call {
+    position: absolute;
     width: 440px;
     height: 940px;
-    left: 120vh; }
+    right: 0; }
     .call .call-form {
       margin-top: 40px;
       margin-left: 32px;
@@ -2654,6 +2641,13 @@ html {
 
 .btn-item:last-of-type {
   margin-right: 0; }
+
+@media (min-width: 1440px) {
+  .page {
+    margin: 0 auto;
+    max-width: 1440px;
+    flex-direction: row;
+    position: relative; } }
 
 
 /*# sourceMappingURL=style.css.map*/
