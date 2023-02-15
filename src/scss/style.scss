@@ -1,0 +1,67 @@
+@import '../../node_modules/swiper/swiper-bundle.css';
+@import '~normalize.css';
+@import './variables.scss';
+@import '../fonts/stylesheet.css';
+@import './header.scss';
+@import './main.scss';
+@import './burger-menu.scss';
+@import './brend.scss';
+@import './tehnic.scss';
+@import './services.scss';
+@import './footer.scss';
+@import './feetback.scss';
+@import './call.scss';
+
+
+
+
+html {
+  box-sizing: border-box;
+}             
+
+.page {
+display: flex;
+ flex-direction: column; 
+ margin: 0 auto; 
+ min-width: 320px;
+ overflow-x: hidden;
+ -ms-overflow-style: none;
+ scrollbar-width: none;
+ position: relative;
+   &::-webkit-scrollbar{
+   display: none;
+   }
+}
+.btn-item {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  border: none;
+  flex-shrink: 0;
+  margin-left: 0;
+  margin-right: 16px; 
+  cursor: pointer;
+      &:hover {
+      filter: opacity(0.9);
+      transform: scale(1.1); 
+      transition: 1s;
+              } 
+}
+.btn-item:first-of-type {
+  margin-left: 0;
+}
+.btn-item:last-of-type {
+  margin-right: 0;
+}   
+
+@media (min-width: 1440px) {
+  .page {
+    margin: 0 auto;
+    max-width: 1440px;
+    flex-direction: row; 
+    position: relative;
+
+  }
+}

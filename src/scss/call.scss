@@ -1,0 +1,158 @@
+.call--hidden {
+  display: none;
+}
+
+.call {
+width: 320px;
+height: 676px;
+background-color: $whiteColor;
+ z-index: 6;
+    .call-form {
+  margin-top: 24px;
+  margin-left: 24px;
+  margin-right: 24px;
+      .call-btn {
+      background-image: url(../img/close.svg);
+      width: 40px;
+      height: 40px;
+      background-color: transparent;
+      border-radius: 100%;
+      background-repeat: no-repeat;
+      border: none;
+      flex-shrink: 0;
+      margin: 0;
+      cursor: pointer;
+        &:hover {
+          filter: opacity(0.9);
+          transform: scale(1.1); 
+          transition: 0.5s;
+        } 
+        } 
+      .call-title {
+        @extend %boldTTLakes;
+        font-size: 24px;
+        line-height: 32px;
+        padding: 0;
+        margin: 0;
+        margin-top: 40px;
+        width: 288px;
+        height: 32px;
+
+        &::before {
+          content: '';
+          position: absolute;
+          width: 4px;
+          height: 40px;
+          left: 0px;
+          background: $azureColor;
+          border-top-right-radius: 4px;
+          border-bottom-right-radius: 4px;
+        } 
+        } 
+       .input--tel {
+        @extend %mediumTTLakes;
+        width: 254px;
+        height: 48px;
+        margin-top: 16px;
+        padding-left: 16px;
+        border: 1px solid $veryLightGrey;
+        border-radius: 8px;
+        line-height: 14px;
+        letter-spacing: -0.2px;
+      }
+       .call--text {
+        @extend %mediumTTLakes;
+        width: 254px;
+        height: 118px;
+        margin-top: 16px;
+        padding-left: 16px;
+        padding-top: 16px;
+        border: 1px solid $veryLightGrey;
+        border-radius: 8px;
+        line-height: 14px;
+        letter-spacing: -0.2px;
+
+      }
+       .call--info {
+        @extend %mediumTTLakes;
+        font-size: 14px;
+        line-height: 16px;
+        width: 288px;
+        height: 55px;
+        padding: 0;
+        margin: 0;
+        margin-top: 16px;
+        position: relative;
+
+         .call-link {
+          text-decoration: none;
+          cursor: pointer;
+          color: $pinkColor;
+         }
+        
+       }
+       .input--submit {
+        position: absolute;
+        bottom: 338px;
+        right: 16px;
+        background-image: url(../img/send.svg);
+        width: 136px;
+        height: 32px;
+        color: transparent;
+        background-color: transparent;
+        background-repeat: no-repeat;
+        border: none;
+        flex-shrink: 0;
+        cursor: pointer;
+       }
+    }
+   
+  }
+  .call--xs {
+    position: absolute;
+    left: 0;
+  }
+  @media (min-width: 1440px) {
+    .call {
+      position: absolute;
+      width: 440px;
+      height: 940px;
+      right: 0;
+      
+
+          .call-form {
+        margin-top: 40px;
+        margin-left: 32px;
+        margin-right: 32px;
+        position: relative;
+            .call-btn {
+              position: absolute;
+              left: -100px;
+              } 
+            .call-title {
+              margin-top: 40px;
+              &::before {
+                left: -32px;
+              } 
+              } 
+              .input--tel {
+                width: 360px;
+                margin-top: 16px;
+                      }
+              .call--info {
+              width: 360px;
+              height: 48px;
+              margin-top: 16px;
+              position: relative;
+             }
+             .input--submit {
+              
+              bottom: -47px;
+              right: 0px;
+            
+             }
+          }
+         
+        }
+
+  }

@@ -1,0 +1,32 @@
+$whiteColor: #ffffff; 
+$turquoiseColor: #D9FFF5;
+$grayColor: #F8F8F8;
+$azureColor: #41F6D7;
+$pangColor: #B8FFEC;
+$veryDarkBlue: #1b1c21;
+$purpleBlue: #7E7E82;
+$smokyWhiteColor: #F2F2F2; 
+$veryLightGrey: #EAEAEA;
+$pinkColor: #FF3E79;
+
+
+
+$breakpoint_xxl: 1440px;
+$breakpoint_md: 768px;
+$breakpoint_sm: 320px;
+
+
+%regularTTLakes {
+  font-family: "TT Lakes", sans-serif;
+  letter-spacing: -0.2px;
+}
+%boldTTLakes {
+  font-family: "TT Lakes", sans-serif;
+  font-weight: bold;
+  letter-spacing: -0.6x;
+}
+%mediumTTLakes {
+  font-family: 'TT Lakes', sans-serif;
+  font-size: 16px;
+  letter-spacing: -0.2px;
+}
