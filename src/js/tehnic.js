@@ -2,8 +2,7 @@ const btnTehnic = document.querySelector('.tehnic-button')
 const swiperTehnic = document.querySelector('.tehnic__swiper')
 const tehnicContainer = document.querySelector('.tehnic-container')
 
-btnTehnic.addEventListener('click', function (evt) {
-        evt.preventDefault();
+btnTehnic.addEventListener('click', function () {
         if (btnTehnic.classList.contains('tehnic-button')) {
 
           btnTehnic.classList.remove('tehnic-button');

@@ -3,26 +3,25 @@ const call = document.querySelector('.call')
 const btnCall= document.querySelector('.call-btn')
 const headerCall = document.querySelector('.btn-item--call')
 
-burgerCall.addEventListener('click', function (evt) {
-  evt.preventDefault();
+burgerCall.addEventListener('click', function () {
+
   call.classList.remove('call--hidden')  
 })
 
-btnCall.addEventListener('click', function (evt) {
-  evt.preventDefault();
+btnCall.addEventListener('click', function () {
+
   call.classList.add('call--hidden')
 
 })
 
-headerCall.addEventListener('click', function (evt) {
-  evt.preventDefault();
+headerCall.addEventListener('click', function () {
+
   call.classList.remove('call--hidden')
 })
 
 
 window.addEventListener('click', function (event) {
-  if(event.target !==call  && event.target !==btnCall  
-    && event.target !==headerCall && event.target !==burgerCall) {
+  if(event.target ===call) {
     call.classList.add('call--hidden')
   }
 })

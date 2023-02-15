@@ -5,14 +5,16 @@
   margin: 0;
   padding: 0;
   border-bottom: 1px solid $turquoiseColor;
-  .tehnic-title {
+}
+.tehnic-title {
     min-width: 320px;
     height: 80px;
     background: linear-gradient(rgba(97%, 97%, 97%, 1), rgba(100%, 100%, 100%, 1));
     display: flex;
     margin: 0;
     padding: 0;
-     .tehnic-link {
+  }
+.tehnic-link {
       @extend %mediumTTLakes;
       text-decoration: none;
       font-weight: normal;
@@ -24,8 +26,7 @@
       margin: 16px;
       cursor: pointer;
      }
-    }
-     .tehnic__swiper {
+.tehnic__swiper {
       position: relative;
       min-width: 0px;
       height: 228px;
@@ -33,136 +34,74 @@
       padding-top: 16px;
       padding-left: 16px;
       padding-right: 16px;
-
-
-         .tehnic-button {
-          display: none;
-        }
-          .swiper-container {
+.swiper-container {
           position: relative;
           height: 208px;
-            .swiper-wrapper {
+}
+.swiper-wrapper {
             position: relative;
-
-            .swiper-slide {
+}
+.swiper-slide {
               width: auto;
-              .tehnic__swiper-slide {
-                height: 160px; 
-                background: $whiteColor;
-                border: 1px solid $veryLightGrey;
-                border-radius: 6px; 
-                background-repeat: no-repeat;
-                display: flex;
-                justify-content: flex-end;
-                position: relative;
-
-                .tehnic__swiper--text {
-                  @extend %mediumTTLakes;
-                  text-decoration: none;
-                  font-weight: normal;
-                  font-style: normal;
-                  line-height: 24px;
-                  color: $veryDarkBlue; 
-                  white-space: nowrap;
-                  width: 288px;
-                  height: 48px;
-                  margin: 16px;
-                  }
-                  
-                  .tehnic__swiper--img {
-                    background-image: url(../img/go.svg);
-                    background-repeat: no-repeat;
-                    width: 40px;
-                    height: 40px;
-                    position: absolute;
-                    top: 104px;
-                    right: 32px
-                  }
-                
-              }
-            }
-
-          }
-        }
-     }
+}
+ }
+  
+.tehnic-button {
+    display: none;
   }
-
+.tehnic__swiper-slide {
+    height: 160px; 
+    background: $whiteColor;
+    border: 1px solid $veryLightGrey;
+    border-radius: 6px; 
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+  }
+.tehnic__swiper--text {
+      @extend %mediumTTLakes;
+      text-decoration: none;
+      font-weight: normal;
+      font-style: normal;
+      line-height: 24px;
+      color: $veryDarkBlue; 
+      white-space: nowrap;
+      width: 288px;
+      height: 48px;
+      margin: 16px;
+      }     
+.tehnic__swiper--img {
+        background-image: url(../img/go.svg);
+        background-repeat: no-repeat;
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: 104px;
+        right: 32px
+      }
   @media (min-width: $breakpoint_md) {
-    .tehnic {
-      .tehnic-title {
+.tehnic-title {
         min-width: 768px;
         height: 56px;
         white-space: nowrap;
-
-        .tehnic-link {
+      }
+.tehnic-link {
           width: 336px;
           height: 24;
         }
 
-
-
-      }
-      .tehnic__swiper {
+.tehnic__swiper {
         min-width: 744px;
         padding-left: 24px;
         padding-right: 0;
-
-        .tehnic-button {
-          display: block;
-          width: 134px;
-          height: 24px;
-          background-color: transparent;
-          border: none;
-          text-decoration: none;
-          font-family: 'TT Lakes';
-          font-weight: bold;
-          font-style: normal;
-          font-size: 16px;
-          line-height: 24px;
-          letter-spacing: -0.2px;
-          color: $veryDarkBlue; 
-          white-space: nowrap;
-          padding: 0;
-          margin: 0; 
-          background-image: url(../img/readMore.svg);
-          background-repeat: no-repeat;
-          background-position: 15px;
-          padding-left: 30px;
-          cursor: pointer;
-        }
-        .tehnic-button--hide{
-          display: block;
-        width: 101px;
-        height: 24px;
-        background-color: transparent;
-        border: none;
-        text-decoration: none;
-        font-family: 'TT Lakes';
-        font-weight: bold;
-        font-style: normal;
-        font-size: 16px;
-        line-height: 24px;
-        letter-spacing: -0.2px;
-        color: $veryDarkBlue; 
-        white-space: nowrap;
-        padding: 0;
-        margin: 0; 
-        background-image: url(../img/icon.svg);
-        background-repeat: no-repeat;
-        background-position: 15px;
-        padding-left: 30px;
-        cursor: pointer;
-        }
-
-
-
-        .swiper-container {
+  .swiper-container {
           position: relative;
           margin: 0;
           padding: 0;
           min-width: 720px;
-
-          .swiper-wrapper {
+        }
+  .swiper-wrapper {
             margin: 0;
             padding: 0;
             min-width: 720px;
@@ -173,107 +112,143 @@
             &>* {
               flex: 0 0 29.3333%;
              } 
-
-            .swiper-slide {
+            }
+  .swiper-slide {
               height: 160px;
               margin: 0;
               margin-top: 24px;
               margin-right: 24px;
               padding: 0;
             }
-          }
-        }
-        .tehnic-container--hide {
+  .tehnic-container--hide {
           height: 208px;
           overflow: hidden;
         } 
-        .tehnic-container--open {
+  .tehnic-container--open {
           height: 390px;
           overflow: visible;
         }
-
       }
-      .tehnic__swiper--open{
+.tehnic__swiper--open{
         height: 460px; 
         overflow: visible;
         }
-      .tehnic__swiper--hide{
+.tehnic__swiper--hide{
        overflow: hidden;
        height: 264px; 
        }  
+    
+.tehnic-button {
+      display: block;
+      width: 134px;
+      height: 24px;
+      background-color: transparent;
+      border: none;
+      text-decoration: none;
+      font-family: 'TT Lakes';
+      font-weight: bold;
+      font-style: normal;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: -0.2px;
+      color: $veryDarkBlue; 
+      white-space: nowrap;
+      padding: 0;
+      margin: 0; 
+      background-image: url(../img/readMore.svg);
+      background-repeat: no-repeat;
+      background-position: 15px;
+      padding-left: 30px;
+      cursor: pointer;
     }
-
-  }
+.tehnic-button--hide{
+      display: block;
+    width: 101px;
+    height: 24px;
+    background-color: transparent;
+    border: none;
+    text-decoration: none;
+    font-family: 'TT Lakes';
+    font-weight: bold;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: $veryDarkBlue; 
+    white-space: nowrap;
+    padding: 0;
+    margin: 0; 
+    background-image: url(../img/icon.svg);
+    background-repeat: no-repeat;
+    background-position: 15px;
+    padding-left: 30px;
+    cursor: pointer;
+    }
+ }
+  
   @media (min-width: 830px) {
-    .tehnic {
-    .tehnic__swiper {
     .swiper-container {
     .swiper-wrapper>* {
       flex: 0 0 30.3%;
      }
     }
   }
-  }
-}
+
 @media (min-width: 1440px) {
-  .tehnic {
-      .tehnic-title {
+ .tehnic-title {
       max-width: 1120px;
       margin: 0;
-       
-      .tehnic-link {
+ }
+.tehnic-link {
       margin-left: 32px;
       }
-        }
-      .tehnic__swiper {
+.tehnic__swiper {
         max-width: 1120px;
         height: 282px; 
         padding-left: 32px;
         padding-right: 0;
         
-        .swiper-container {
+  .swiper-container {
           max-width: 1120px;
           margin: 0;
           padding: 0;
-          
-          .swiper-wrapper {
+  }     
+  .swiper-wrapper {
              margin: 0;
             padding: 0;
 
             &>* {
               flex: 0 0 21.9%;
              }
-             .swiper-slide {
+            }
+  .swiper-slide {
               height: 160px;
               margin: 0;
               margin-top: 16px;
               margin-right: 24px;
               padding: 0; 
           } 
-        }
+       }
 
-        }
-        .tehnic-container--hide {
+.tehnic-container--hide {
           height: 208px;
           overflow: hidden;
         } 
-        .tehnic-container--open {
+.tehnic-container--open {
           height: 208px;
           overflow: visible;
         }
-
-      }
-      .tehnic__swiper--open{
+.tehnic__swiper--open{
         height: 264px; 
         overflow: visible;
       }
-      .tehnic__swiper--hide{
+.tehnic__swiper--hide{
        overflow: hidden;
        height: 264px; 
        }  
     }
 
-  }
+
 
 
 

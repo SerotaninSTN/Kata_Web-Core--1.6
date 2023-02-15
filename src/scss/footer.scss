@@ -10,6 +10,7 @@
   opacity: 0.72;
   padding-left: 16px;
   padding-right: 16px;
+}
   .footer--developers {
     margin-top: 16px;
     
@@ -29,8 +30,7 @@
   } 
     
 
-  &>* {
-    .footer--link {
+.footer--link {
 
    white-space: normal;
   text-decoration: none;
@@ -42,15 +42,14 @@
   opacity: 0.72;
   } 
 
-}
-}
+
 @media (min-width: $breakpoint_md) {
   .footer {
     flex-direction: row;
     height: 105px;
     padding-top: 32px;
     justify-content: space-between;
-
+  }
     .footer--developers {
       margin: 0;
         text-align: left;
@@ -67,6 +66,6 @@
       margin: 0;
       text-align: right;
     } 
-  }
+  
  }
 

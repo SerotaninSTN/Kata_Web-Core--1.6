@@ -2,8 +2,8 @@ const btnBrend = document.querySelector('.swiper-button')
 const swiperBrend = document.querySelector('.brend-swiper')
 const swiperContainer = document.querySelector('.swiper-container')
 
-btnBrend.addEventListener('click', function (evt) {
-        evt.preventDefault();
+btnBrend.addEventListener('click', function () {
+      
         if (btnBrend.classList.contains('swiper-button')) {
 
             btnBrend.classList.remove('swiper-button');

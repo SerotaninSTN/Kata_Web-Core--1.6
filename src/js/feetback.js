@@ -3,24 +3,24 @@ const feetback = document.querySelector('.feetback')
 const btnFeetback = document.querySelector('.feetback-btn')
 const headerChat = document.querySelector('.btn-item--chat')
 
-burgerChat.addEventListener('click', function (evt) {
-  evt.preventDefault();
+burgerChat.addEventListener('click', function () {
+
   feetback.classList.remove('feetback--hidden')
 })
 
-btnFeetback.addEventListener('click', function (evt) {
-  evt.preventDefault();
+btnFeetback.addEventListener('click', function () {
+
   feetback.classList.add('feetback--hidden')
 })
 
-headerChat.addEventListener('click', function (evt) {
-  evt.preventDefault();
+headerChat.addEventListener('click', function () {
+
   feetback.classList.remove('feetback--hidden')
 })
 
 
 window.addEventListener('click', function (event) {
-  if(event.target !==feetback && event.target !==burgerChat  && event.target !==headerChat) {
+  if(event.target === feetback) {
     feetback.classList.add('feetback--hidden')
   }
 })

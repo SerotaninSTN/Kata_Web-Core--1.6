@@ -1,5 +1,5 @@
 import '../scss/style.scss'
-import './work'
+
 import './mainReadMore.js'
 import './burgerMenu.js'
 

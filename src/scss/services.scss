@@ -3,14 +3,16 @@
   margin: 0;
   padding: 0;
   border-bottom: 1px solid $turquoiseColor;
-  .services-title {
+}
+.services-title {
     min-width: 320px;
     height: 80px;
     background: linear-gradient(rgba(97%, 97%, 97%, 1), rgba(100%, 100%, 100%, 1));
     display: flex;
     margin: 0;
     padding: 0;
-    .services-link {
+  }
+.services-link {
       @extend %mediumTTLakes;
       text-decoration: none;
       font-weight: normal;
@@ -22,8 +24,7 @@
       margin: 16px;
       cursor: pointer;
     }
-  }
-  .services__swiper {
+.services__swiper {
     position: relative;
     min-width: 0px;
     height: 495px;
@@ -32,80 +33,19 @@
     padding-left: 16px;
     padding-right: 16px;
     margin-bottom: 0;
-
-    .services-table {
-       display: none 
-    }
     .swiper-container {
       position: relative;
       height: 250px;
-        .swiper-wrapper {
+    }
+    .swiper-wrapper {
         position: relative;
-
-        .swiper-slide {
+    }
+    .swiper-slide {
           width: 260px !important;
           margin-right: 16px !important;
-
-          .services-slide {
-            height: 200px; 
-            background: $whiteColor;
-            border-radius: 6px; 
-            display: flex;
-            flex-direction: column;
-            position: relative;
-            justify-content: space-between;
-            padding-bottom: 16px;
-            
-            .services-slide--title {
-              @extend %mediumTTLakes;
-              font-size: 14px;
-              line-height: 16px;
-              vertical-align: top;
-              color: $purpleBlue;
-              height: 16px;
-              opacity: 72.18%;
-              font-weight: normal;
-              font-style: normal;
-              margin: 0;
-              margin-top: 16px;
-              margin-left: 16px;
-              padding: 0;
-                          }
-
-
-            .services-slide--text {
-              @extend %regularTTLakes;
-              color: $veryDarkBlue;
-              line-height: 18px;
-              vertical-align: top;
-              margin: 0;
-              margin-top: 4px;
-              margin-left: 16px;
-              padding: 0;
-            }  
-            .order {
-              position: absolute;
-              right: 16px;
-              bottom: 16px;
-              width: 119px;
-              height: 32px;
-              background-image: url(../img/order.svg);
-              padding: 0;
-              background-color: transparent;
-              background-repeat: no-repeat;
-              border: none;
-              flex-shrink: 0;
-              cursor: pointer;
-            }            
-        
-
-
         }
       }
-    }
-  
-  }
-  .services-content {
+.services-content {
     height: 200px;
     background-color: $smokyWhiteColor; 
     margin-top: 32px;
@@ -113,8 +53,8 @@
     margin-right: 16px;
     display: flex;
     flex-direction: column;
-
-    .services-content--text {
+}
+.services-content--text {
       padding: 0;
       margin: 0;
       @extend  %regularTTLakes;
@@ -123,12 +63,12 @@
      color:  $veryDarkBlue;
      letter-spacing: 0.2 px;
     }
- .services--comercia {
+.services--comercia {
         margin-top: 16px;
         width: 192px;
         height: 55px;
-       
-  .services--link {
+ }     
+.services--link {
     @extend  %mediumTTLakes;
         line-height: 24px;
         font-weight: normal;
@@ -151,96 +91,99 @@
          background-repeat: no-repeat;
          width: 10px;
          height: 10px;
-     
         }
   } 
-}
-}
-  }
-  
-}
+.services-table {
+    display: none 
+ }
+ .services-slide {
+  height: 200px; 
+  background: $whiteColor;
+  border-radius: 6px; 
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: space-between;
+  padding-bottom: 16px;
+ }
+.services-slide--title {
+    @extend %mediumTTLakes;
+    font-size: 14px;
+    line-height: 16px;
+    vertical-align: top;
+    color: $purpleBlue;
+    height: 16px;
+    opacity: 72.18%;
+    font-weight: normal;
+    font-style: normal;
+    margin: 0;
+    margin-top: 16px;
+    margin-left: 16px;
+    padding: 0;
+                }
+.services-slide--text {
+    @extend %regularTTLakes;
+    color: $veryDarkBlue;
+    line-height: 18px;
+    vertical-align: top;
+    margin: 0;
+    margin-top: 4px;
+    margin-left: 16px;
+    padding: 0;
+  }  
+.order {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    width: 119px;
+    height: 32px;
+    background-image: url(../img/order.svg);
+    padding: 0;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    flex-shrink: 0;
+    cursor: pointer;
+  }            
+
 
 @media (min-width: $breakpoint_md) {
 .services {
   margin: 0;
   background-color: $smokyWhiteColor;
-  .services-title {
+} 
+.services-title {
     margin: 0;
-    .services-link {
+    }
+.services-link {
       margin: 24px;
     }
-  }
-  .services__swiper {
+.services__swiper {
       height: 530px;
       margin-top: 24px;
-      margin-right: 24px;
-      margin-left: 24px;
-      padding: 0;
-
-      .services-table {
-      display: block;
-      display: flex;
-      margin: 0;
+      margin-right: 16px;
       margin-left: 16px;
-      width: 100%;
-      justify-content: space-between;
-      
-      .table--service {
-      min-width: 338px;
-      font-family: 'TT Lakes', sans-serif;
-      font-size: 16px;
-      letter-spacing: -0.2px;
-      line-height: 16px;
-      color: $purpleBlue;
-      height: 16px;
-      opacity: 72.18%;
-      font-weight: normal;
-      font-style: normal;
-      }
-      .table--prise {
-      font-family: 'TT Lakes', sans-serif;
-      font-size: 16px;
-      letter-spacing: -0.2px;
-      line-height: 16px;
-      color: $purpleBlue;
-      height: 16px;
-      opacity: 72.18%;
-      font-weight: normal;
-      font-style: normal;
-      }
-      .table--time {
-      margin-right: 240px;
-      font-family: 'TT Lakes', sans-serif;
-      font-size: 16px;
-      letter-spacing: -0.2px;
-      line-height: 16px;
-      color: $purpleBlue;
-      height: 16px;
-      opacity: 72.18%;
-      font-weight: normal;
-      font-style: normal;
-      }
-      }
-    .swiper-container {
+      padding: 0; 
+  .swiper-container {
       height: 324px;
       position: static;
       margin: 0;
       padding: 0;
-     
-      .swiper-wrapper { 
+  }
+  .swiper-wrapper { 
         flex-direction: column;
         height: 324px;
         position: static;
         margin: 0;
         padding: 0;
-      
-          .swiper-slide {
+  }
+  .swiper-slide {
           width: 100% !important;
           margin: 0px !important;
           position: relative; 
           height: 64px;
       
-             &::before {
+      &::before {
             position: absolute;
             content: "";
             width: 96%;
@@ -249,72 +192,73 @@
             z-index: 1;
            background-color: $veryLightGrey;
           }
-          &:first-child::before {
+      &:first-child::before {
             background-color: transparent;
           }
-         
-          .services-slide {
+        }
+}
+.services-slide {
             flex-direction: row;
             height: 64px;  
             position: relative;
             margin: 0;
-            
-          
             &>* {
               .services-slide--title {
               display: none;
-            }
-            .services-slide--text {
+              }
+             .services-slide--text {
                 margin-top: 23px;
                 white-space: nowrap;
-              }  
+              } 
+             .services-slide--length {
+              margin-left: 5px;
+              margin-right: 5px;
+              margin-top: 23px;
+             }
               .order {
                 position: static;
                 margin-right: 16px;
                 margin-top: 13px;
-             
               }
             }
-            .services-slide--service {
-            width: 388px;
+          }
+.services-slide--service {
+            width: 420px;
             position: relative;
+            margin: 0;
+            
             }  
 
-            .services-slide--prise{
-              width: 96px;
+.services-slide--prise{
+              width: 86px;
               position: relative;
+              margin: 0;
+         
 
             }
-            .services-slide--time {
+ .services-slide--time {
               width: 280px;
               display: flex;
               justify-content: space-between;
               position: relative;
-            } 
-            }
-
-          
-
-          }
-        }
-
-      }
-      .swiper-pagination{
+              margin: 0;
+            }         
+.swiper-pagination{
         display: none;
       }
-      .services-content {
+.services-content {
         width: 100%;
         margin: 0;
         margin-top: 280px;
         height: 100px;
-
-        .services-content--text {
+}
+.services-content--text {
           margin-top: 23px;
+   
           margin-left: 16px;
           margin-right: 16px;
         }
-        .services--comercia{
-        .services--link {
+.services--link {
               white-space: nowrap;
               width: 292px;
               height: 24px;
@@ -326,21 +270,67 @@
                 top: 5px;
               }
       }
-
-      }
-    }
+  .services-table {
+    display: block;
+    display: flex;
+    margin: 0;
+    margin-left: 16px;
+    width: 100%;
+    justify-content: space-between;
   }
-}
+    .table--service {
+    min-width: 390px;
+    font-family: 'TT Lakes', sans-serif;
+    font-size: 16px;
+    letter-spacing: -0.2px;
+    line-height: 16px;
+    color: $purpleBlue;
+    height: 16px;
+    opacity: 72.18%;
+    font-weight: normal;
+    font-style: normal;
+    }
+    .table--prise {
+          min-width: 86px;
+    font-family: 'TT Lakes', sans-serif;
+    font-size: 16px;
+    letter-spacing: -0.2px;
+    line-height: 16px;
+    color: $purpleBlue;
+    height: 16px;
+    opacity: 72.18%;
+    font-weight: normal;
+    font-style: normal;
+    }
+    .table--time {
+    // margin-right: 240px;
+    font-family: 'TT Lakes', sans-serif;
+    font-size: 16px;
+    letter-spacing: -0.2px;
+    line-height: 16px;
+    color: $purpleBlue;
+    height: 16px;
+    opacity: 72.18%;
+    font-weight: normal;
+    font-style: normal;
+    min-width: 280px;
+   
+    } 
+  }
+
+@media (min-width: 815px) {
+  .services-slide--text {
+    white-space: nowrap;
+  } 
 }
 @media (min-width: 1440px) {
-  .services{
     .services__swiper {
       margin-right: 32px;
       margin-left: 32px;
+    }
       .services-content {
         height: 120px;
       }
-    }
-  }
+    
 }
 
